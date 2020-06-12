@@ -10,23 +10,19 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            List<Dog> dogs = new List<Dog> { new Dog(), new Dog(), new Dog() };
+            List<Animal> animals =
+                new List<Animal>
+                {
+                    new Dog(), new Cat(), new Cat(), new Dog(),
+                    new Dog(), new Cat(), new Dog(), new Dog()
+                };
 
-            List<Cat> cats = new List<Cat> { new Cat(), new Cat(), new Cat() };
-
-
-            foreach(Dog dog in dogs)
+            foreach(var item in animals)
             {
-                dog.Bart();
-                dog.Sleep();
-                dog.Eat();
+                item.Eat();
+                item.Sleep();
             }
-            foreach (Cat cat in cats)
-            {
-                cat.Eat();
-                cat.Sleep();
-                cat.Meow();
-            }
+
         }
     }
 }
