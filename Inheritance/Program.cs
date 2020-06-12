@@ -21,17 +21,12 @@ namespace Inheritance
             {
                 item.Eat();
                 item.Sleep();
-                if ( item is Dog)
-                {
-                    //클래스 자료형변환 방법 두가지
-                    ((Dog)item).Bark();
-                    //as ~로써
-                    (item as Dog).Bark();
-                }
-                else
-                {
-                    ((Cat)item).Meow();
-                }
+
+                var dog = item as Dog;
+                if (dog != null) { dog.Bark(); }
+
+                var cat = item as Cat;
+                if (cat != null) { cat.Meow(); }
 
             }
 
