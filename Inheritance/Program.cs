@@ -21,8 +21,19 @@ namespace Inheritance
             {
                 item.Eat();
                 item.Sleep();
+                if ( item is Dog)
+                {
+                    ((Dog)item).Bark();
+                }
+                else
+                {
+                    ((Cat)item).Meow();
+                }
+
             }
 
+
+            
         }
     }
 }

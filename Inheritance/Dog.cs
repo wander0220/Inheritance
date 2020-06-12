@@ -11,6 +11,6 @@ namespace Inheritance
         public string Color { get; set; }
 
         public Dog() { Color = "흰색"; }
-        public void Bart() { Console.WriteLine("왈왈왕ㅇ왕ㅇ오아ㅗㅇ알"); }
+        public void Bark() { Console.WriteLine("왈왈왕ㅇ왕ㅇ오아ㅗㅇ알"); }
     }
 }
